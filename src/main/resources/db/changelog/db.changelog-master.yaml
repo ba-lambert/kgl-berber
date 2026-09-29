@@ -9,3 +9,15 @@ databaseChangeLog:
       file: db/changelog/changes/003-create-role-permissions-table.sql
   - include:
       file: db/changelog/changes/004-create-user.sql
+  - include:
+      file: db/changelog/changes/005-create-password-reset-tokens-table.sql
+  - include:
+      file: db/changelog/changes/006-seed-default-role.sql
+  - include:
+      file: db/changelog/changes/007-add-user-email-unique-constraint.sql
+  - include:
+      file: db/changelog/changes/008-create-invitations-table.sql
+  - include:
+      file: db/changelog/changes/009-seed-admin-role-and-permission.sql
+  - include:
+      file: db/changelog/changes/010-seed-bootstrap-admin-user.sql

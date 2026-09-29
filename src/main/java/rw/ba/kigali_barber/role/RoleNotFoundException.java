@@ -7,4 +7,8 @@ public class RoleNotFoundException extends RuntimeException {
     public RoleNotFoundException(UUID id) {
         super("Role not found with id: " + id);
     }
+
+    public RoleNotFoundException(String role) {
+        super("Role not found: " + role);
+    }
 }

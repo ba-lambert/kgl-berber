@@ -22,7 +22,7 @@ public class UserEntity extends BaseEntity {
     @JoinColumn(name = "usr_role_id", nullable = false)
     private RoleEntity role;
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
     public String getUsername() {
